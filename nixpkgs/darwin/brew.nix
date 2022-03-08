@@ -48,6 +48,8 @@
     ];
 
     casks = [
+      "android-platform-tools"
+      "android-studio"
       "basictex"
       "clipy"
       "firefox-beta"
