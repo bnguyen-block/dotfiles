@@ -7,7 +7,7 @@ vim_cmd("au TermOpen * setlocal nonumber norelativenumber")
 vim_cmd([[filetype plugin indent on]])
 vim_cmd([[set iskeyword+=-]])
 
-vim_g.python3_host_prog = "/usr/bin/python3"
+vim_g.python3_host_prog = "/opt/homebrew/bin/python3"
 
 set.autoindent = true
 set.autoread = true
