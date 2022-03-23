@@ -24,7 +24,6 @@ with pkgsUnstable; [
   htop
   hub
   hugo
-  jdk11
   jq
   k9s
   kdiff3
