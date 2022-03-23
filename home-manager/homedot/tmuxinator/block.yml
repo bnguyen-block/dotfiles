@@ -1,0 +1,6 @@
+name: block
+root: ~/Development
+
+windows:
+  - notes: cd ~/Development/docs
+  - franklin: cd ~/Development/cash-franklin
