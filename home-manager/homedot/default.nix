@@ -33,7 +33,8 @@
   "floskell.json".source = ./haskell/floskell.json;
 
   # tmuxinantor
-  ".tmuxinator/personal.yml".source = ./tmuxinator/personal.yml;
+  ".tmuxinator/afterpay.yml".source = ./tmuxinator/afterpay.yml;
+  ".tmuxinator/block.yml".source = ./tmuxinator/block.yml;
 
   # mdl
   ".mdlrc".source = ./mdl/mdlrc;
