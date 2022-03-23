@@ -12,3 +12,9 @@ $if mode=vi
   Control-p: previous-history
   Control-n: next-history
 $endif
+
+################################################################################
+# block
+################################################################################
+set completion-ignore-case on
+set bell-style none
