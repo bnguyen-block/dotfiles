@@ -51,4 +51,3 @@ export_path "/Library/TeX/texbin/"
 ################################################################################
 export_path "$HOME/bin"
 export JAVA_HOME="$(/usr/libexec/java_home -v 11)"
->>>>>>> 68d32eb (block: Export JAVA_HOME the recommended way; Source rvm)
