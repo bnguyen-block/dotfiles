@@ -3,5 +3,5 @@ root: ~/Development
 
 windows:
   - notes: cd ~/Development/docs
-  - franklin: cd ~/Development/cash-franklin
+  - franklin: cd ~/Development/polyrepo/franklin
   - polyrepo: cd ~/Development/polyrepo
