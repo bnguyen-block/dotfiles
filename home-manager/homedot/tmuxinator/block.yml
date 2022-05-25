@@ -2,6 +2,5 @@ name: block
 root: ~/Development
 
 windows:
-  - notes: cd ~/Development/docs
-  - franklin: cd ~/Development/polyrepo/franklin
-  - polyrepo: cd ~/Development/polyrepo
+  - notes: cd ~/Development/bnguyen-notes
+  - bestie: cd ~/Development/cash-bestie
