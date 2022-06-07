@@ -3,4 +3,10 @@ root: ~/Development
 
 windows:
   - notes: cd ~/Development/bnguyen-notes
+
+  - bestie-servers:
+      panes:
+        - stubby: cd ~/Development/cash-bestie/stubby
+        - api: cd ~/Development/cash-bestie/api
+
   - bestie: cd ~/Development/cash-bestie
