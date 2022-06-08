@@ -34,7 +34,7 @@ server() {
   if [[ "$op" == "up" ]]; then
     echo "Starting $service_name ..."
     tmux send-keys -t "$paneId" "$startup_command" Enter
-    sleep 3
+    sleep 1
     echo "$service_name server is up !!!"
   fi
 
@@ -42,7 +42,7 @@ server() {
   if [[ "$op" == "down" ]]; then
     echo "Shutting down $service_name ..."
     tmux send-keys -t "$paneId" C-C
-    sleep 3
+    sleep 1
     echo "$service_name server is down !!!"
   fi
 }
