@@ -18,31 +18,31 @@ server() {
   fi
 
   window="bestie-servers"
-  command="be rails s"
+  startup_command="be rails s"
+  paneId=""
 
-  # shellcheck disable=SC3011
+  # shellcheck disable=SC3010
   if [[ "$service_name" =~ "stubby" ]]; then
-    command="be gruf"
+    startup_command="fd rb | entr -rc bundle exec gruf"
+    paneId="$window.2"
+  else
+    paneId="$window.1"
   fi
 
-  for pane in $(tmux list-panes -t "$window" -F "#{pane_current_path}:#W.#P"); do
-    paneId=$(echo "$pane" | awk -F ":" '{print $2}')
-    # shellcheck disable=SC3010
-    # shellcheck disable=SC2076
-    if [[ "$pane" =~ "$service_name" ]]; then
-      if [[ "$op" == "up" ]]; then
-        echo "Starting $service_name ..."
-        tmux send-keys -t "$paneId" "$command" Enter
-        sleep 3
-        echo "$service_name server is up !!!"
-      fi
+  # shellcheck disable=SC3010
+  # shellcheck disable=SC2076
+  if [[ "$op" == "up" ]]; then
+    echo "Starting $service_name ..."
+    tmux send-keys -t "$paneId" "$startup_command" Enter
+    sleep 3
+    echo "$service_name server is up !!!"
+  fi
 
-      if [[ "$op" == "down" ]]; then
-        echo "Shutting down $service_name ..."
-        tmux send-keys -t "$paneId" C-C
-        sleep 3
-        echo "$service_name server is down !!!"
-      fi
-    fi
-  done
+  # shellcheck disable=SC3010
+  if [[ "$op" == "down" ]]; then
+    echo "Shutting down $service_name ..."
+    tmux send-keys -t "$paneId" C-C
+    sleep 3
+    echo "$service_name server is down !!!"
+  fi
 }
