@@ -23,7 +23,7 @@ server() {
 
   # shellcheck disable=SC3010
   if [[ "$service_name" =~ "stubby" ]]; then
-    startup_command="fd rb | entr -rc bundle exec gruf"
+    startup_command="fd rb -E \"*proto/squareup*\" | entr -rc bundle exec gruf"
     paneId="$window.2"
   else
     paneId="$window.1"
