@@ -1,4 +1,9 @@
-{ inputs, config, pkgs, ... }: {
+{ inputs, config, pkgs, ... }:
+let
+  tapBlock = import ./tapBlock.nix { };
+  brewBlock = import ./brewBlock.nix { };
+  caskBlock = import ./caskBlock.nix { };
+in {
   environment = { };
 
   homebrew = {
@@ -19,7 +24,7 @@
       "homebrew/cask-fonts"
       "homebrew/cask-versions"
       "homebrew/services"
-    ];
+    ] ++ tapBlock;
 
     brews = [
       "automake"
@@ -45,7 +50,7 @@
       "tree-sitter"
       "zlib"
       "zstd"
-    ];
+    ] ++ brewBlock;
 
     casks = [
       "android-platform-tools"
@@ -60,6 +65,6 @@
       "obsidian"
       "postman"
       "visual-studio-code"
-    ];
+    ] ++ caskBlock;
   };
 }
