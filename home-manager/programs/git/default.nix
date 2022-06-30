@@ -93,6 +93,15 @@ in {
       login = username;
       signingkey = "F06A6429E41ACFBC";
     };
+
+    filter = {
+      lfs = {
+        smudge = "git-lfs smudge -- %f";
+        process = "git-lfs filter-process";
+        required = true;
+        clean = "git-lfs clean -- %f";
+      };
+    };
   };
 
   ignores = [
