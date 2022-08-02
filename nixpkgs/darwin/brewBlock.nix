@@ -63,7 +63,6 @@
   "tcl-tk"
   "terminal-notifier"
   "tfenv"
-  "tree-sitter"
   "unibilium"
   "utf8proc"
 ]
