@@ -6,6 +6,7 @@ with pkgsUnstable; [
   buildkite-agent
   buildkite-cli
   caddy
+  cmake
   detekt
   docker-compose
   entr
