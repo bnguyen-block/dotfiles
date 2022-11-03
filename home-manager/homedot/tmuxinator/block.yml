@@ -3,11 +3,3 @@ root: ~/Development
 
 windows:
   - notes: cd ~/Development/bnguyen-notes
-
-  - bestie-servers:
-      panes:
-        # Do not change the order. It is coupled with script in block.sh
-        - api: cd ~/Development/cash-bestie/api
-        - stubby: cd ~/Development/cash-bestie/stubby
-
-  - bestie: cd ~/Development/cash-bestie
