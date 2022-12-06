@@ -56,6 +56,7 @@
   "sqm"
   "sqtf"
   "sqtflint"
+  "square-git-utils"
   "square-ssh-config"
   "stern"
   "supervisor"
