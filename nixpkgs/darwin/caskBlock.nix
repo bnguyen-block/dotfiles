@@ -1,5 +1,1 @@
-{ ... }:
-[
-  "android-platform-tools"
-  "android-studio"
-]
+{ ... }: [ "android-platform-tools" "android-studio" ]

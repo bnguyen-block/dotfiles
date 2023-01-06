@@ -1,5 +1,4 @@
-{ ... }:
-[
+{ ... }: [
   "apssh"
   "aws-creds"
   "bazaar"
