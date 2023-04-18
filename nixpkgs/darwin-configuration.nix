@@ -29,7 +29,6 @@ in {
   imports = [
     (import ./darwin/preferences.nix { inherit config pkgs homeDirectory; })
     ./darwin/brew.nix
-    (import ./darwin/networking.nix { inherit userDetails; })
     <home-manager/nix-darwin>
   ];
 
