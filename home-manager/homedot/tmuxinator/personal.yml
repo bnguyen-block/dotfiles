@@ -5,5 +5,5 @@ windows:
   - dotfiles:
       panes:
         - api: cd ~/dotfiles
-  - projects: cd ~/dev/projects
-  - study: cd ~/dev/study
+  - projects: cd ~/projects
+  - study: cd ~/study
