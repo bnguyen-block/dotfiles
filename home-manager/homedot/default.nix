@@ -34,6 +34,7 @@
 
   # tmuxinantor
   ".tmuxinator/block.yml".source = ./tmuxinator/block.yml;
+  ".tmuxinator/personal.yml".source = ./tmuxinator/personal.yml;
 
   # mdl
   ".mdlrc".source = ./mdl/mdlrc;
