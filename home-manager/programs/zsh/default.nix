@@ -1,5 +1,4 @@
 { pkgs, isLinux, ... }: {
-
   enable = true;
 
   autocd = true;
