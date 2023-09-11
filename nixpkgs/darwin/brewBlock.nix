@@ -43,7 +43,6 @@
   "ruby-build"
   "saml2aws"
   "shared-mime-info"
-  "snapifact"
   "snappy"
   "sq"
   "sq-apps"
