@@ -135,6 +135,13 @@ return packer.startup({
 			requires = { "nvim-tree/nvim-web-devicons" },
 			config = [[require("config.diffview")]],
 		})
+
+		use({
+			"zbirenbaum/copilot.lua",
+			cmd = "Copilot",
+			event = "InsertEnter",
+			config = [[require("config.copilot")]],
+		})
 	end,
 	config = {
 		profile = { enable = true },
