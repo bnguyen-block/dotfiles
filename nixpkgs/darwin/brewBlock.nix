@@ -18,7 +18,6 @@
   "kube-access-pg"
   "kube-access-port-fwd"
   "kube-access-redis"
-  "kubectl-updateconfig"
   "kubectx"
   "kubernetes-cli"
   "kustomize"
