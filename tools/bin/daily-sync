@@ -1,0 +1,23 @@
+#!/usr/bin/env sh
+
+echo "#######################################"
+echo "## $(date) ##"
+
+echo "Sync binary"
+/opt/homebrew/bin/sqm update
+/Users/bnguyen/bin/hermit sync
+
+echo "Syncing repos ..."
+echo "Syncing Franklin ..."
+cd "/Users/bnguyen/Development/cash-franklin" && /Users/bnguyen/.nix-profile/bin/hub sync
+
+echo "Syncing idv ..."
+cd "/Users/bnguyen/Development/cash-idv" && /Users/bnguyen/.nix-profile/bin/hub sync
+
+echo "Syncing region-admission ..."
+cd "/Users/bnguyen/Development/cash-region-admission" && /Users/bnguyen/.nix-profile/bin/hub sync
+
+echo "Syncing usher ..."
+cd "/Users/bnguyen/Development/cash-usher" && /Users/bnguyen/.nix-profile/bin/hub sync
+
+echo "Done"
