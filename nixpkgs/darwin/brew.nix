@@ -57,7 +57,6 @@ in {
       "android-studio"
       "basictex"
       "clipy"
-      "firefox-beta"
       "font-hack-nerd-font"
       "hammerspoon"
       "intellij-idea-ce"
