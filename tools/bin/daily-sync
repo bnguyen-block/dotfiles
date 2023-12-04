@@ -9,6 +9,7 @@ echo "## Syncing binary ..."
 echo "####################"
 /opt/homebrew/bin/sqm update
 /Users/bnguyen/bin/hermit sync
+/run/current-system/sw/bin/nix-channel --update
 
 echo "####################"
 echo "## Syncing Franklin ..."
