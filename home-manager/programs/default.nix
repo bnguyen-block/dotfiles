@@ -7,7 +7,7 @@
   direnv = import ./direnv { inherit pkgs; };
   git = import ./git {
     inherit pkgs;
-    gitDetails = userDetails.gitDetails;
+    gitDetails = userDetails.git;
   };
   lazygit = import ./lazygit { inherit pkgs; };
   tmux = import ./tmux { inherit pkgs; };
