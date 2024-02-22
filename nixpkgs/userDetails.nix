@@ -1,9 +1,7 @@
 {
-  username = "bangn";
-  hostName = "macbookpro-bangn";
-  gitDetails = {
-    username = "bangn";
-    email = "thebangnguyen@gmail.com";
+  username = "bnguyen";
+  git = {
+    username = "bnguyen-block";
+    email = "bnguyen@squareup.com";
   };
 }
-
