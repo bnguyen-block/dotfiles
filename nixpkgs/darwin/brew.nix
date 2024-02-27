@@ -2,7 +2,6 @@
 let
   tapBlock = import ./tapBlock.nix { };
   brewBlock = import ./brewBlock.nix { };
-  caskBlock = import ./caskBlock.nix { };
 in {
   environment = { };
 
@@ -21,6 +20,7 @@ in {
     taps = [
       "beeftornado/rmtree"
       "homebrew/bundle"
+      "homebrew/cask"
       "homebrew/cask-fonts"
       "homebrew/cask-versions"
       "homebrew/services"
@@ -53,8 +53,6 @@ in {
     ] ++ brewBlock;
 
     casks = [
-      "android-platform-tools"
-      "android-studio"
       "basictex"
       "clipy"
       "font-hack-nerd-font"
@@ -63,6 +61,6 @@ in {
       "obsidian"
       "postman"
       "visual-studio-code"
-    ] ++ caskBlock;
+    ];
   };
 }
