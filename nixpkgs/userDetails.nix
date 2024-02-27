@@ -1,6 +1,6 @@
 {
   username = "bnguyen";
-  git = {
+  gitDetails = {
     username = "bnguyen-block";
     email = "bnguyen@squareup.com";
   };
