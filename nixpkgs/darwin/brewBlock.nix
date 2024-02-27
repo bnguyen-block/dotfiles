@@ -8,7 +8,6 @@
   "certigo"
   "colordiff"
   "dnsmasq"
-  "git-lfs"
   "gnupg"
   "gyb"
   "haproxy"
@@ -52,10 +51,8 @@
   "square-ssh-config"
   "stern"
   "supervisor"
-  "swiftformat"
   "tcl-tk"
   "terminal-notifier"
   "tfenv"
-  "unibilium"
   "utf8proc"
 ]
