@@ -1,1 +1,1 @@
-{ ... }: [ "afterpaytouch/platform" "nshipster/formulae" "square/formula" ]
+{ ... }: [ "nshipster/formulae" "square/formula" ]
