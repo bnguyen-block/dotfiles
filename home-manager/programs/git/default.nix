@@ -1,11 +1,13 @@
 { pkgs, gitDetails, ... }:
-let username = gitDetails.username;
+let
+  username = gitDetails.username;
+  userEmail = gitDetails.email;
 in {
   enable = true;
   package = pkgs.gitAndTools.gitFull;
 
   userName = username;
-  userEmail = gitDetails.email;
+  userEmail = userEmail;
 
   aliases = {
     dds = "diff --stat";
@@ -41,6 +43,7 @@ in {
       commentChar = ",";
       pager = "delta";
       untrackedCache = true;
+      hookPath = "~/Development/config_files/dot-files/git_template/hooks";
     };
 
     delta = {
@@ -96,7 +99,7 @@ in {
     receive = { fsckobjects = true; };
 
     user = {
-      login = username;
+      login = gitDetails.login;
       signingkey = "F06A6429E41ACFBC";
     };
 

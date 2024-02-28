@@ -1,7 +1,8 @@
 {
   username = "bnguyen";
   gitDetails = {
-    username = "bnguyen-block";
+    username = "Bang Nguyen";
     email = "bnguyen@squareup.com";
+    login = "bnguyen-block";
   };
 }
