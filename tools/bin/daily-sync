@@ -31,4 +31,9 @@ echo "## Syncing usher ..."
 echo "####################"
 cd "/Users/bnguyen/Development/cash-usher" && /Users/bnguyen/.nix-profile/bin/hub sync
 
+echo "####################"
+echo "## Syncing config_files ..."
+echo "####################"
+cd "/Users/bnguyen/Development/config_files" && /Users/bnguyen/.nix-profile/bin/hub sync
+
 echo "Done"
