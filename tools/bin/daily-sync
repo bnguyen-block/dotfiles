@@ -17,21 +17,6 @@ echo "####################"
 cd "/Users/bnguyen/Development/cash-franklin" && /Users/bnguyen/.nix-profile/bin/hub sync
 
 echo "####################"
-echo "## Syncing idv ..."
-echo "####################"
-cd "/Users/bnguyen/Development/cash-idv" && /Users/bnguyen/.nix-profile/bin/hub sync
-
-echo "####################"
-echo "## Syncing region-admission ..."
-echo "####################"
-cd "/Users/bnguyen/Development/cash-region-admission" && /Users/bnguyen/.nix-profile/bin/hub sync
-
-echo "####################"
-echo "## Syncing usher ..."
-echo "####################"
-cd "/Users/bnguyen/Development/cash-usher" && /Users/bnguyen/.nix-profile/bin/hub sync
-
-echo "####################"
 echo "## Syncing config_files ..."
 echo "####################"
 cd "/Users/bnguyen/Development/config_files" && /Users/bnguyen/.nix-profile/bin/hub sync
