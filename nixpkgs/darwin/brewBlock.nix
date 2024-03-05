@@ -29,6 +29,7 @@
   "proto-lint"
   "python@3"
   "python@3.8"
+  "qai"
   "redis"
   "roller"
   "snappy"
