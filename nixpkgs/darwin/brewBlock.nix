@@ -1,6 +1,5 @@
 { ... }: [
   "aws-creds"
-  "bazaar"
   "bazelisk"
   "beyond-curl"
   "beyond-ssh-agent"
@@ -26,7 +25,6 @@
   "pinentry"
   "pivit"
   "polyrepo"
-  "proto-lint"
   "python@3"
   "python@3.8"
   "qai"
