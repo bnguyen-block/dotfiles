@@ -1,4 +1,4 @@
-{ pkgs, gitDetails, ... }:
+{ pkgs, gitDetails, homeDir, ... }:
 let
   username = gitDetails.username;
   userEmail = gitDetails.email;
@@ -42,7 +42,8 @@ in {
       commentChar = ",";
       pager = "delta";
       untrackedCache = true;
-      hookPath = "~/Development/config_files/dot-files/git_template/hooks";
+      hookPath =
+        "${homeDir}/Development/config_files/dot-files/git_template/hooks";
     };
 
     delta = {
