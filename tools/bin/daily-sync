@@ -11,14 +11,4 @@ echo "####################"
 /Users/bnguyen/bin/hermit sync
 /run/current-system/sw/bin/nix-channel --update
 
-echo "####################"
-echo "## Syncing Franklin ..."
-echo "####################"
-cd "/Users/bnguyen/Development/cash-franklin" && /Users/bnguyen/.nix-profile/bin/hub sync
-
-echo "####################"
-echo "## Syncing config_files ..."
-echo "####################"
-cd "/Users/bnguyen/Development/config_files" && /Users/bnguyen/.nix-profile/bin/hub sync
-
 echo "Done"
