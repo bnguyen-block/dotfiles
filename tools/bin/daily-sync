@@ -7,6 +7,7 @@ echo "#######################################"
 echo "####################"
 echo "## Syncing binary ..."
 echo "####################"
+export PATH="/opt/homebrew/bin:${PATH}"
 /opt/homebrew/bin/sqm update
 /Users/bnguyen/bin/hermit sync
 /run/current-system/sw/bin/nix-channel --update
