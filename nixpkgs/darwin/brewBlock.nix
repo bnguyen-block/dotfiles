@@ -8,7 +8,6 @@
   "gnupg"
   "gpg"
   "haproxy"
-  "imagemagick"
   "libassuan"
   "libbitcoin-protocol"
   "libiodbc"
