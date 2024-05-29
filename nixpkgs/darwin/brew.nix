@@ -57,6 +57,7 @@ in {
 
     casks = [
       "basictex"
+      "chatgpt"
       "clipy"
       "font-hack-nerd-font"
       "hammerspoon"
