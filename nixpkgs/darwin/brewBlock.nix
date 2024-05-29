@@ -31,5 +31,4 @@
   "square-ssh-config"
   "trufflehog"
   "utf8proc"
-  "yubidisaster"
 ]
