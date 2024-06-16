@@ -16,6 +16,7 @@
   "maven"
   "mysql"
   "npth"
+  "openssl@1.1"
   "p2"
   "pinentry"
   "pivit"
