@@ -138,6 +138,10 @@ in {
     "node_modules"
     "tmp"
 
+    # python
+    ".venv"
+    "__pycache__"
+
     # Ignore asdf local package version
     ".tool-versions"
 
