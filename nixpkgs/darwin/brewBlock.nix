@@ -1,5 +1,6 @@
 { ... }: [
   "ai"
+  "awscli"
   "aws-creds"
   "bazelisk"
   "beyond-curl"
