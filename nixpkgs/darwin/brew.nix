@@ -65,6 +65,7 @@ in {
       "obsidian"
       "postman"
       "visual-studio-code"
+      "google-cloud-sdk"
     ];
   };
 }
