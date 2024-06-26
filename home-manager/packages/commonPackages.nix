@@ -2,6 +2,7 @@
 with pkgsUnstable; [
   asdf-vm
   bat
+  black
   buf
   buildkite-agent
   buildkite-cli
@@ -43,6 +44,7 @@ with pkgsUnstable; [
   pdftk
   plantuml
   postgresql_12
+  pylint
   python312Packages.sqlparse
   ripgrep
   shellcheck
@@ -61,7 +63,6 @@ with pkgsUnstable; [
   xclip
   yaml-language-server
   yamllint
-  yapf
   yarn
   yq
 ]
