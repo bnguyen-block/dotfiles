@@ -14,4 +14,5 @@
   ".config/starship.toml".source = ./starship/starship.toml;
   ".config/yamllint/config".source = ./yamllint/config;
   ".config/zathura/zathurarc".source = ./zathura/zathurarc;
+  ".config/pypoetry".source = ./pypoetry/pypoetry;
 }
