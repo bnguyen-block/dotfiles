@@ -38,7 +38,6 @@ with pkgsUnstable; [
   minikube
   mkcert
   moreutils
-  ngrok
   nixfmt-classic
   nixpkgs-fmt
   nushell
