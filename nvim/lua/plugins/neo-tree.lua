@@ -9,9 +9,15 @@ return {
       },
     },
 <<<<<<< HEAD
+<<<<<<< HEAD
   }
 ||||||| parent of ebf9337 (nvim: Use lazyvim config)
 =======
   },
 >>>>>>> ebf9337 (nvim: Use lazyvim config)
+||||||| parent of 47a5d2e (nvim: Update lazyvim config)
+  },
+=======
+  }
+>>>>>>> 47a5d2e (nvim: Update lazyvim config)
 }
