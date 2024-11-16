@@ -26,8 +26,12 @@ with pkgs; [
   lua
   luajitPackages.luacheck
   luarocks
+<<<<<<< HEAD
   markdownlint-cli
   markdownlint-cli2
+||||||| parent of 47a5d2e (nvim: Update lazyvim config)
+=======
+>>>>>>> 47a5d2e (nvim: Update lazyvim config)
   mdl
   mise
   mkcert
