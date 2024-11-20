@@ -3,24 +3,6 @@ return {
     "echasnovski/mini.nvim",
   },
   {
-<<<<<<< HEAD
-||||||| parent of fe076a7 (nvim: Add mini.nvim)
-=======
-    "echasnovski/mini.surround",
-    opts = {
-      mappings = {
-        add = "gsa",            -- Add surrounding in Normal and Visual modes
-        delete = "gsd",         -- Delete surrounding
-        find = "gsf",           -- Find surrounding (to the right)
-        find_left = "gsF",      -- Find surrounding (to the left)
-        highlight = "gsh",      -- Highlight surrounding
-        replace = "gsr",        -- Replace surrounding
-        update_n_lines = "gsn", -- Update `n_lines`
-      },
-    },
-  },
-  {
->>>>>>> fe076a7 (nvim: Add mini.nvim)
     "echasnovski/mini.comment",
     event = "VeryLazy",
     opts = {
