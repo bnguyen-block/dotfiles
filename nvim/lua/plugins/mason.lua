@@ -7,7 +7,6 @@ return {
         "prettier",
         "prettierd",
         "vale"
-        "vale",
       },
     },
   },
