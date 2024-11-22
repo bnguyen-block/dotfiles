@@ -1,8 +1,10 @@
 {
-  username = "bangn";
-  hostName = "macbookpro-bangn";
+  username = "bnguyen";
+  computerName = "bnguyen-m3"; # Default BLKJ6069YX2YF
+  hostName = "bnguyen-block-m3";
   gitDetails = {
-    username = "bangn";
-    email = "thebangnguyen@gmail.com";
+    username = "Bang Nguyen";
+    email = "bnguyen@squareup.com";
+    login = "bnguyen-block";
   };
 }

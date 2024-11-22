@@ -1,0 +1,1 @@
+certificates.artifactory.cert = "/opt/homebrew/etc/openssl@1.1/cert.pem"

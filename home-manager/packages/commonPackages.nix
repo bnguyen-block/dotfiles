@@ -8,6 +8,7 @@ with pkgsUnstable; [
   awscli2
   bat
   buf
+  cmake
   detekt
   difftastic
   docker-compose

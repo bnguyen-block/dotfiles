@@ -10,7 +10,7 @@
   direnv = import ./direnv {inherit pkgs;};
 
   git = import ./git {
-    inherit pkgs;
+    inherit pkgs homeDir;
     gitDetails = userDetails.gitDetails;
   };
 
