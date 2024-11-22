@@ -10,8 +10,6 @@ with pkgsUnstable; [
   buildkite-agent
   buildkite-cli
   caddy
-  cmake
-  detekt
   detekt
   difftastic
   docker-compose
@@ -41,17 +39,14 @@ with pkgsUnstable; [
   kubernetes-helm
   luajitPackages.luacheck
   luarocks
-<<<<<<< HEAD
   markdownlint-cli
   markdownlint-cli2
-||||||| parent of 47a5d2e (nvim: Update lazyvim config)
-=======
->>>>>>> 47a5d2e (nvim: Update lazyvim config)
   mdl
   minikube
   mise
   mkcert
   moreutils
+  ngrok
   nixfmt-classic
   nixpkgs-fmt
   nushell
