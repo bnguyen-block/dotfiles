@@ -1,11 +1,13 @@
-{ pkgs, gitDetails, ... }:
-let username = gitDetails.username;
+{ pkgs, gitDetails, homeDir, ... }:
+let
+  username = gitDetails.username;
+  userEmail = gitDetails.email;
 in {
   enable = true;
   package = pkgs.gitAndTools.gitFull;
 
   userName = username;
-  userEmail = gitDetails.email;
+  userEmail = userEmail;
 
   aliases = {
     dds = "diff --stat";
@@ -37,9 +39,11 @@ in {
     commit = { template = "~/.gitmessage"; };
 
     core = {
-      editor = "nvim -f";
       commentChar = ",";
+      editor = "nvim -f";
       untrackedCache = true;
+      hookPath =
+        "${homeDir}/Development/config_files/dot-files/git_template/hooks";
     };
 
     delta = {
@@ -97,6 +101,12 @@ in {
 
     status = { showUntrackedFiles = "all"; };
 
+    url = {
+      "ssh://org-49461806@github.com/squareup/" = {
+        insteadOf = "https://github.com/squareup/";
+      };
+    };
+
     transfer = { fsckobjects = true; };
     fetch = {
       fsckobjects = true;
@@ -105,8 +115,17 @@ in {
     receive = { fsckobjects = true; };
 
     user = {
-      login = username;
+      login = gitDetails.login;
       signingkey = "F06A6429E41ACFBC";
+    };
+
+    filter = {
+      lfs = {
+        smudge = "git-lfs smudge -- %f";
+        process = "git-lfs filter-process";
+        required = true;
+        clean = "git-lfs clean -- %f";
+      };
     };
   };
 

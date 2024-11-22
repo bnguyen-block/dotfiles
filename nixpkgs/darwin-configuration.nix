@@ -8,7 +8,7 @@ in {
     name = "${username}";
     home = homeDirectory;
   };
-  home-manager.users."${username}" = (import ../home-manager/home.nix);
+  home-manager.users."${username}" = import ../home-manager/home.nix;
 
   environment = {
     pathsToLink = [ "/Applications" ];
@@ -26,9 +26,9 @@ in {
   security.pam.enableSudoTouchIdAuth = true;
 
   imports = [
+    (import ./darwin/networking.nix { inherit userDetails; })
     (import ./darwin/preferences.nix { inherit config pkgs homeDirectory; })
     ./darwin/brew.nix
-    (import ./darwin/networking.nix { inherit userDetails; })
     <home-manager/nix-darwin>
   ];
 

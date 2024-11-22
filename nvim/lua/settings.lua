@@ -1,13 +1,10 @@
 local set = vim.o
 local vim_cmd = vim.cmd
-local vim_g = vim.g
 local home = os.getenv("HOME")
 
 vim_cmd("au TermOpen * setlocal nonumber norelativenumber")
 vim_cmd([[filetype plugin indent on]])
 vim_cmd([[set iskeyword+=-]])
-
-vim_g.python3_host_prog = "/usr/bin/python3"
 
 set.autoread = true
 set.backspace = "indent,eol,start"

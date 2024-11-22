@@ -1,12 +1,10 @@
-{ pkgs, homeDir, isLinux, userDetails, ... }:
-
-{
+{ pkgs, homeDir, isLinux, userDetails, ... }: {
   # Let Home Manager install and manage itself.
   home-manager.enable = true;
 
   direnv = import ./direnv { inherit pkgs; };
   git = import ./git {
-    inherit pkgs;
+    inherit pkgs homeDir;
     gitDetails = userDetails.gitDetails;
   };
   lazygit = import ./lazygit { inherit pkgs; };

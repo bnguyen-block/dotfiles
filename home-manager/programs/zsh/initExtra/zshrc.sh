@@ -34,3 +34,10 @@ export_path "/opt/homebrew/sbin"
 # basictex
 ################################################################################
 export_path "/Library/TeX/texbin/"
+
+################################################################################
+# block
+################################################################################
+export_path "$HOME/bin"
+export JAVA_HOME="$(/usr/libexec/java_home -v 11)"
+export_path "/Applications/SnowSQL.app/Contents/MacOS"
