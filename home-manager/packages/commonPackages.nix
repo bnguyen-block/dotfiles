@@ -10,6 +10,8 @@ with pkgsUnstable; [
   buildkite-agent
   buildkite-cli
   caddy
+  cmake
+  detekt
   detekt
   difftastic
   docker-compose
@@ -46,7 +48,6 @@ with pkgsUnstable; [
   mise
   mkcert
   moreutils
-  ngrok
   nixfmt-classic
   nixpkgs-fmt
   nushell
