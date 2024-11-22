@@ -9,3 +9,37 @@ def clear
   system('clear')
   nil
 end
+
+# Block
+begin
+  local_irbrc = "#{ENV['HOME']}/.irbrc_local"
+  load local_irbrc if File.exist?(local_irbrc)
+  require 'rubygems'
+  require 'method_lister'
+rescue LoadError
+end
+
+require 'pp'
+
+# print SQL to STDOUT
+if ENV.include?('RAILS_ENV') && !Object.const_defined?('RAILS_DEFAULT_LOGGER')
+  require 'logger'
+  RAILS_DEFAULT_LOGGER = Logger.new(STDOUT)
+end
+
+# Autocomplete
+require 'irb/completion'
+
+case RUBY_ENGINE
+when 'macruby'
+  # Prompt behavior
+  IRB.formatter.prompt = :simple
+else
+  # Prompt behavior
+  ARGV.concat ['--readline', '--prompt-mode', 'simple']
+
+  # History
+  require 'irb/ext/save-history'
+  IRB.conf[:SAVE_HISTORY] = 1000
+  IRB.conf[:HISTORY_FILE] = "#{ENV['HOME']}/.irb-save-history"
+end
