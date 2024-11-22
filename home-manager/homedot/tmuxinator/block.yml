@@ -1,0 +1,5 @@
+name: block
+root: ~/Development
+
+windows:
+  - notes: cd ~/Development/bnguyen-notes

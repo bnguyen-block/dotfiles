@@ -31,6 +31,7 @@
   "floskell.json".source = ./haskell/floskell.json;
 
   # tmuxinantor
+  ".tmuxinator/block.yml".source = ./tmuxinator/block.yml;
   ".tmuxinator/personal.yml".source = ./tmuxinator/personal.yml;
 
   # mdl
@@ -60,4 +61,13 @@
 
   # detekt
   "detekt.yaml".source = ./detekt/detekt.yaml;
+
+  # yarn
+  ".yarnrc".source = ./yarn/yarnrc;
+
+  # gem
+  ".gemrc".source = ./gem/gemrc;
+
+  # bundler
+  ".bundle/config".source = ./bundler/config;
 }
