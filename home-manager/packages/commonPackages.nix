@@ -47,6 +47,7 @@ with pkgsUnstable; [
   nixfmt-classic
   nixpkgs-fmt
   nushell
+  ormolu
   pandoc
   pdftk
   pipx
