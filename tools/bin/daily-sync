@@ -16,4 +16,9 @@ echo "## Update nix-channel ..."
 echo "####################"
 /run/current-system/sw/bin/nix-channel --update
 
+echo "####################"
+echo "## Update cash-server..."
+echo "####################"
+cd "$HOME/Development/cash-server" && git fetch --all && git pull origin main
+
 echo "Done"
