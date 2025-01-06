@@ -1,7 +1,0 @@
-#! /usr/bin/env bash
-
-if [[ "$(uname)" == "Darwin" ]]; then
-  open -na "RubyMine.app" --args "$@"
-else
-  /opt/rubymine/bin/rubymine.sh
-fi
