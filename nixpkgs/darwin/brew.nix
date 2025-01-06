@@ -1,9 +1,13 @@
-{ inputs, config, pkgs, ... }:
-let
-  tapBlock = import ./tapBlock.nix { };
-  brewBlock = import ./brewBlock.nix { };
+{
+  inputs,
+  config,
+  pkgs,
+  ...
+}: let
+  tapBlock = import ./tapBlock.nix {};
+  brewBlock = import ./brewBlock.nix {};
 in {
-  environment = { };
+  environment = {};
 
   homebrew = {
     enable = true;
@@ -17,43 +21,47 @@ in {
       lockfiles = true;
     };
 
-    taps = [
-      "beeftornado/rmtree"
-      "homebrew/bundle"
-      "homebrew/cask-fonts"
-      "homebrew/cask-versions"
-      "homebrew/services"
-    ] ++ tapBlock;
+    taps =
+      [
+        "beeftornado/rmtree"
+        "homebrew/bundle"
+        "homebrew/cask-fonts"
+        "homebrew/cask-versions"
+        "homebrew/services"
+      ]
+      ++ tapBlock;
 
-    brews = [
-      "automake"
-      "bash-completion@2"
-      "cmake"
-      "colordiff"
-      "coreutils"
-      "gettext"
-      "libtermkey"
-      "libtool"
-      "libusb"
-      "libuv"
-      "libxmlsec1"
-      "libyaml"
-      "llvm@12"
-      "luajit-openresty"
-      "luv"
-      "mas"
-      "msgpack"
-      "ninja"
-      "pam-reattach"
-      "pcre2"
-      "pkg-config"
-      "ruby-build"
-      "starship"
-      "terminal-notifier"
-      "tree-sitter"
-      "zlib"
-      "zstd"
-    ] ++ brewBlock;
+    brews =
+      [
+        "automake"
+        "bash-completion@2"
+        "cmake"
+        "colordiff"
+        "coreutils"
+        "gettext"
+        "libtermkey"
+        "libtool"
+        "libusb"
+        "libuv"
+        "libxmlsec1"
+        "libyaml"
+        "llvm@12"
+        "luajit-openresty"
+        "luv"
+        "mas"
+        "msgpack"
+        "ninja"
+        "pam-reattach"
+        "pcre2"
+        "pkg-config"
+        "ruby-build"
+        "starship"
+        "terminal-notifier"
+        "tree-sitter"
+        "zlib"
+        "zstd"
+      ]
+      ++ brewBlock;
 
     casks = [
       "basictex"

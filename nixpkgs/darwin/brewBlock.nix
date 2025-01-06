@@ -1,4 +1,4 @@
-{ ... }: [
+{...}: [
   "ai"
   "aws-creds"
   "awscli"
