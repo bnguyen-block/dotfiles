@@ -8,7 +8,6 @@
   home-manager.enable = true;
 
   direnv = import ./direnv {inherit pkgs;};
-
   git = import ./git {
     inherit pkgs homeDir;
     gitDetails = userDetails.gitDetails;
