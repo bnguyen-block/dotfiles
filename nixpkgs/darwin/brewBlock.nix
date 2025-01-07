@@ -3,7 +3,6 @@
   "aws-creds"
   "awscli"
   "bazelisk"
-  "beyond-curl"
   "beyond-ssh-agent"
   "c-ares"
   "certigo"
