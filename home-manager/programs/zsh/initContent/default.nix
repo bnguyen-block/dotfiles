@@ -7,4 +7,4 @@ let
   prompt = builtins.readFile ./prompt.sh;
   zshrc = builtins.readFile ./zshrc.sh;
 in
-  block + functions + git + keybindings + zshrc + prompt + mise
+  functions + git + keybindings + zshrc + prompt + mise + block
