@@ -4,6 +4,7 @@
   "awscli"
   "bazelisk"
   "beyond-ssh-agent"
+  "block-ssh-agent"
   "c-ares"
   "certigo"
   "csvkit"
