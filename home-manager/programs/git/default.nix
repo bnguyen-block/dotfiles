@@ -1,5 +1,6 @@
 {
   pkgs,
+  homeDir,
   gitDetails,
   ...
 }: let
@@ -109,6 +110,10 @@ in {
     user = {
       login = username;
       signingkey = "F06A6429E41ACFBC";
+    };
+
+    maintenance = {
+      repo = "${homeDir}/Development/cash-server";
     };
   };
 
