@@ -64,7 +64,6 @@ in {
       ++ brewBlock;
 
     casks = [
-      "basictex"
       "chatgpt"
       "clipy"
       "font-hack-nerd-font"
