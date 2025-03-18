@@ -66,6 +66,9 @@
   # yarn
   ".yarnrc".source = ./yarn/yarnrc;
 
+  # npm
+  ".npmrc".source = ./npm/npmrc;
+
   # gem
   ".gemrc".source = ./gem/gemrc;
 
