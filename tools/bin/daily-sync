@@ -20,5 +20,6 @@ echo "####################"
 echo "## Update cash-server..."
 echo "####################"
 cd "$HOME/Development/cash-server" && git fetch --all && git pull origin main
+cd "$HOME/Development/fancy-graph/" && bash make-graph
 
 echo "Done"
