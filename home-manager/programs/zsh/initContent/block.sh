@@ -12,4 +12,8 @@ kill-gradle() {
   ps -ef | grep -i gradle | awk '{print $2}' | head -n +2
 }
 
+docker-connect-mysql() {
+  docker exec -it "$1" mysql -h 127.0.0.1 -P 3306 -u root
+}
+
 hermit shell-hooks --zsh
