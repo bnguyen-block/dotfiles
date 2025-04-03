@@ -1,6 +1,7 @@
 return {
   { "blink.cmp", enabled = false },
   { "coq_nvim", enabled = true },
-  { "nvim-cmp", enabled = false },
+  { "friendly-snippets", enabled = false },
+  { "nvim-autopairs", enabled = false },
   { "render-markdown.nvim", enabled = false },
 }
