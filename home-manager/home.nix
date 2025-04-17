@@ -6,10 +6,7 @@
 with builtins; let
   pkgsUnstable = import <nixpkgs> {};
   # This one is very couple with bootstrap script
-  userDetails =
-    if pkgs.stdenv.isLinux
-    then import ../nixpkgs/userDetails.nix
-    else import ../.nixpkgs/userDetails.nix;
+  userDetails = import ../nixpkgs/userDetails.nix;
   username = userDetails.username;
   homeDir =
     if pkgs.stdenv.isLinux
