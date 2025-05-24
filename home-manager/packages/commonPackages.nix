@@ -3,8 +3,8 @@ with pkgs; [
   alejandra
   bat
   buf
+  cmake
   delta
-  detekt
   diff-so-fancy
   difftastic
   docker-compose
