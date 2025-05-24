@@ -43,7 +43,7 @@ install_nix_darwin() {
   if ! command -v darwin-rebuild; then
     echo "Installing nix-darwin..."
     nix-shell '<darwin>' -A installer
-    darwin-rebuild switch
+    sudo darwin-rebuild switch
   fi
 }
 
@@ -77,9 +77,9 @@ populate_nix_config() {
 
   if [[ "$(uname)" == "Darwin" ]]; then
     echo -e "Populating nixpkgs config files for nix-darwin..."
-    rm -rf "$HOME/.nixpkgs"
+    rm -rf "$HOME/.config/nixpkgs"
     rm -rf "$HOME/home-manager"
-    ln -sfn "$PWD"/nixpkgs "$HOME/.nixpkgs"
+    ln -sfn "$PWD"/nixpkgs "$HOME/.config"
     ln -sfn "$PWD"/home-manager "$HOME/home-manager"
   fi
 }
