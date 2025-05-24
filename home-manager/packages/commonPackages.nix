@@ -44,7 +44,6 @@ with pkgsUnstable; [
   mise
   mkcert
   moreutils
-  ngrok
   nixfmt-classic
   nixpkgs-fmt
   nushell
