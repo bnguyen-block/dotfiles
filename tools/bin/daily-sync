@@ -22,4 +22,9 @@ echo "####################"
 cd "$HOME/Development/cash-server" && git fetch --all && git pull origin main
 cd "$HOME/Development/fancy-graph/" && bash make-graph
 
+echo "####################"
+echo "## Update goose cli "
+echo "####################"
+curl -fsSL https://github.com/block/goose/releases/download/stable/download_cli.sh | CONFIGURE=false bash
+
 echo "Done"
