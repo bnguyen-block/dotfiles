@@ -174,5 +174,8 @@ in {
 
     # mise config
     ".mise.toml"
+
+    # claude
+    ".claude"
   ];
 }
