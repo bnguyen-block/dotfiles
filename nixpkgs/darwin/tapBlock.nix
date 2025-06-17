@@ -1,1 +1,1 @@
-{...}: ["nshipster/formulae" "square/formula"]
+{...}: ["nshipster/formulae" "square/formula" "withgraphite/tap"]

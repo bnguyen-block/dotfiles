@@ -11,6 +11,7 @@
   "csvkit"
   "geese"
   "gpg"
+  "graphite"
   "haproxy"
   "libassuan"
   "libbitcoin-protocol"
