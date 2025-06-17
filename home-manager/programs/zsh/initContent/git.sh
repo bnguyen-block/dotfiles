@@ -86,10 +86,10 @@ gstsh() {
 }
 
 branchme() {
-  branch_name="$(whoami)/$(date -u +%Y-%m-%d)"
+  branch_name="$(whoami)-$(date -u +%Y-%m-%d)"
 
   if ! [[ $# == 0 ]]; then
-    branch_name="$branch_name/$1"
+    branch_name="$branch_name-$1"
   fi
 
   git checkout -b "$branch_name"
