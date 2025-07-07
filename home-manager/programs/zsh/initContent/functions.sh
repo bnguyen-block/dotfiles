@@ -208,6 +208,7 @@ rubodiff() {
 
 rebuild-system() {
   if [[ "$(uname)" == "Darwin" ]]; then
+    sudo bash ~/dotfiles/backup-shells.sh
     sudo darwin-rebuild switch "$@"
   elif [[ "$(uname)" == "Linux" ]]; then
     home-manager switch "$@"
