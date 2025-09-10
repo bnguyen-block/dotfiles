@@ -8,6 +8,7 @@
   "block-ssh-agent"
   "c-ares"
   "certigo"
+  "codex"
   "csvkit"
   "geese"
   "gpg"
