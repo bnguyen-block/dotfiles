@@ -25,8 +25,6 @@ in {
       [
         "beeftornado/rmtree"
         "homebrew/bundle"
-        "homebrew/cask-fonts"
-        "homebrew/cask-versions"
         "homebrew/services"
       ]
       ++ tapBlock;
