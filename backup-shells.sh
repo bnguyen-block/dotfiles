@@ -4,3 +4,4 @@ today=$(date +"%d-%m-%Y")
 mv /etc/zshenv{,.$today}
 mv /etc/zshrc{,.$today}
 mv /etc/bashrc{,.$today}
+mv /etc/zprofile{,.$today}
