@@ -27,4 +27,8 @@ echo "## Update goose cli "
 echo "####################"
 curl -fsSL https://github.com/block/goose/releases/download/stable/download_cli.sh | CONFIGURE=false bash
 
+echo "####################"
+echo "## Clean nix"
+echo "####################"
+nix-collect-garbage --delete-older-than 7d
 echo "Done"
