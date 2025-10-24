@@ -30,6 +30,7 @@
   "python@3.9"
   "qai"
   "roller"
+  "rsync"
   "snappy"
   "sq"
   "sq-apps"
