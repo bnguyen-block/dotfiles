@@ -1,6 +1,7 @@
 {...}: [
   "ai"
   "aws-creds"
+  "aws-iam-authenticator"
   "awscli"
   "bazelisk"
   "beyond-curl"
@@ -14,6 +15,7 @@
   "gpg"
   "graphite"
   "haproxy"
+  "jq"
   "libassuan"
   "libbitcoin-protocol"
   "libiodbc"
@@ -34,6 +36,7 @@
   "snappy"
   "sq"
   "sq-apps"
+  "sq-playpen"
   "sq-prb"
   "sq-proto-lint"
   "sqm"
