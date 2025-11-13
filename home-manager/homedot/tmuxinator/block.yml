@@ -2,4 +2,11 @@ name: block
 root: ~/Development
 
 windows:
-  - notes: cd ~/Development/bnguyen-notes
+  - ai:
+      layout: layout ee72,190x67,0,0[190x33,0,0{95x33,0,0,3,94x33,96,0,6},190x33,0,34{95x33,0,34,4,94x33,96,34,7}]
+      panes:
+        - cd ~/Development/cash-server-claude/
+        - cd ~/Development/cash-server-amp/
+        - cd ~/Development/cash-server-goose/
+        - cd ~/Development/cash-server-codex/
+  - fcp: cd ~/Development/cash-server/finplat-customer-profile/
