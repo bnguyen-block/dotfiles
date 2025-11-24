@@ -12,6 +12,7 @@
   "codex"
   "csvkit"
   "geese"
+  "gemini-cli"
   "gpg"
   "graphite"
   "haproxy"
