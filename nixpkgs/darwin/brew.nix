@@ -55,7 +55,6 @@ in {
         "ruby-build"
         "starship"
         "terminal-notifier"
-        "tree-sitter"
         "zlib"
         "zstd"
       ]
