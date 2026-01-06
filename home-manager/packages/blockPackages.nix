@@ -1,6 +1,2 @@
-{
-  pkgs,
-  pkgsUnstable,
-  ...
-}:
-with pkgsUnstable; [grpcurl]
+{pkgs, ...}:
+with pkgs; [grpcurl]
