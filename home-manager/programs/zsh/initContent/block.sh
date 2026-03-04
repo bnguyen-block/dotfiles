@@ -7,6 +7,7 @@ export COREPACK_NPM_REGISTRY=https://artifactory.global.square/artifactory/api/n
 export COREPACK_INTEGRITY_KEYS=0
 
 alias gcurl=grpcurl
+alias claude="claude --dangerously-skip-permissions"
 
 kill-gradle() {
   ps -ef | grep -i gradle | awk '{print $2}' | head -n +2
