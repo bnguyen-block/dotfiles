@@ -2,5 +2,5 @@ name: block
 root: ~/Development
 
 windows:
-  - development: cd ~/Development/
-  - fcp: cd ~/Development/cash-server/finplat-customer-profile/
+  - development: cd ~/Development/block-docs
+  - cfa: cd ~/Development/cash-server/cash-finplat-accounts/
