@@ -16,6 +16,7 @@
   "graphite"
   "haproxy"
   "jq"
+  "ldcli"
   "libassuan"
   "libbitcoin-protocol"
   "libiodbc"
