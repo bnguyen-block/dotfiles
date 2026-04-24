@@ -40,7 +40,7 @@ with pkgs; [
   pdftk
   pipx
   plantuml
-  # poetry
+  poetry
   postgresql_17
   pylint
   python312Packages.sqlparse
