@@ -62,15 +62,13 @@ in {
 
     casks = [
       "chatgpt"
+      "claude-code"
       "clipy"
       "codex"
       "font-hack-nerd-font"
       "gcloud-cli"
       "hammerspoon"
-      "intellij-idea-ce"
       "obsidian"
-      "postman"
-      "visual-studio-code"
     ];
   };
 }
