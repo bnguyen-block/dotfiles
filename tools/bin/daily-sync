@@ -17,14 +17,9 @@ echo "####################"
 /run/current-system/sw/bin/nix-channel --update
 
 echo "####################"
-echo "## Update fancy-graph
+echo "## Update fancy-graph"
 echo "####################"
 cd "$HOME/Development/fancy-graph/" && bash make-graph
-
-echo "####################"
-echo "## Update goose cli "
-echo "####################"
-curl -fsSL https://github.com/block/goose/releases/download/stable/download_cli.sh | CONFIGURE=false bash
 
 echo "####################"
 echo "## Clean nix"
