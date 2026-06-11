@@ -36,6 +36,14 @@ export_path "/opt/homebrew/sbin"
 # export_path "/opt/homebrew/opt/llvm@12/bin"
 
 ################################################################################
+# claude code
+################################################################################
+# Prefer the self-updating native install in ~/.local/bin over the IT-managed
+# copy in /usr/local/bin. Unconditional prepend: export_path would skip it
+# because home.sessionPath already appends ~/.local/bin.
+export PATH="$HOME/.local/bin:$PATH"
+
+################################################################################
 # block
 ################################################################################
 export_path "$HOME/bin"

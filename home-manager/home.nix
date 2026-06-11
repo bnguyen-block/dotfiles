@@ -47,10 +47,10 @@ in
     home.username = username;
     home.homeDirectory = homeDir;
     home.sessionPath = [
+      "${config.home.homeDirectory}/.local/bin"
       "${config.home.homeDirectory}/.cabal/bin"
       "${config.home.homeDirectory}/.cargo/bin"
       "${config.home.homeDirectory}/.ghcup/bin"
-      "${config.home.homeDirectory}/.local/bin"
       "${config.home.homeDirectory}/.talisman/bin"
       "${config.home.homeDirectory}/dotfiles/tools/bin"
       "/opt/ghc/bin"
