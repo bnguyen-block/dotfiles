@@ -13,7 +13,6 @@ in {
     enable = true;
     onActivation = {
       autoUpdate = true;
-      cleanup = "uninstall";
       upgrade = true;
       extraFlags = ["--force-cleanup"];
     };
