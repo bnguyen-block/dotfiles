@@ -41,6 +41,7 @@ in {
       editor = "nvim -f";
       pager = "delta";
       untrackedCache = true;
+      fsmonitor = true;
     };
 
     delta = {
