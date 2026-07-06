@@ -22,11 +22,14 @@ in {
 
     taps =
       [
-        "beeftornado/rmtree"
+        {
+          name = "beeftornado/rmtree";
+          trusted = true;
+        }
         "homebrew/bundle"
         "homebrew/services"
       ]
-      ++ tapBlock;
+      ++ map (tap: tap // {trusted = true;}) tapBlock;
 
     brews =
       [
