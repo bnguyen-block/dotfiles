@@ -50,5 +50,6 @@
   "square-ssh-config"
   "trufflehog"
   "utf8proc"
+  "vjeantet/tap/alerter"
   "yubidisaster"
 ]
