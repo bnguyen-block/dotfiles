@@ -66,7 +66,6 @@ in {
       "chatgpt"
       "claude-code"
       "clipy"
-      "codex"
       "font-hack-nerd-font"
       "gcloud-cli"
       "hammerspoon"
