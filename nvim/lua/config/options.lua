@@ -7,6 +7,5 @@ vim.g.coq_v1 = true
 vim.g.coq_settings = {
   keymap = {
     recommended = true,
-    jump_to_mark = "<C-f>",
   },
 }
