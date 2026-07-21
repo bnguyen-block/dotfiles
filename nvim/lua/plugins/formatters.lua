@@ -44,7 +44,7 @@ return {
           javascriptreact = { "prettierd", "prettier" },
           json = { "jq" },
           lua = { "stylua" },
-          markdown = { "vale", "markdownlint-cli2" },
+          markdown = { "markdownlint-cli2" },
           nix = { "alejandra" },
           python = { "ruff" },
           ruby = { "rubocop" },

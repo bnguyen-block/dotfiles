@@ -34,9 +34,8 @@
   ".tmuxinator/block.yml".source = ./tmuxinator/block.yml;
   ".tmuxinator/personal.yml".source = ./tmuxinator/personal.yml;
 
-  # mdl
-  ".mdlrc".source = ./mdl/mdlrc;
-  "mdl/style.rb".source = ./mdl/style.rb;
+  # markdownlint
+  ".markdownlint-cli2.yaml".source = ./markdownlint/markdownlint-cli2.yaml;
 
   "dircolors.nord".source =
     pkgs.fetchFromGitHub {

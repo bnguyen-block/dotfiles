@@ -28,7 +28,6 @@ with pkgs; [
   luarocks
   markdownlint-cli
   markdownlint-cli2
-  mdl
   mise
   mkcert
   moreutils

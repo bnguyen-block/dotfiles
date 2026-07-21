@@ -6,7 +6,6 @@ return {
       ensure_installed = {
         "prettier",
         "prettierd",
-        "vale",
       },
     },
   },

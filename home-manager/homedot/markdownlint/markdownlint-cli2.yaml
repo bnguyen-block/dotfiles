@@ -1,0 +1,12 @@
+config:
+  default: true
+  MD004: false # Unordered list style
+  MD013: # Line length
+    line_length: 120
+    tables: false
+    code_blocks false
+  MD029: false # Ordered list item prefix
+  MD032: false # Lists should be surrounded by blank lines
+  MD033: false # No inline html
+  MD024: # Multiple headers with the same content
+    siblings_only: true
