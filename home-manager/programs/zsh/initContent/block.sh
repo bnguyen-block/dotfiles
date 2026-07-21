@@ -18,3 +18,6 @@ docker-connect-mysql() {
 }
 
 hermit shell-hooks --zsh
+
+alias ccr="claude --resume"
+alias cdr="codex resume --all"
