@@ -7,6 +7,37 @@ vim_cmd("au TermOpen * setlocal nonumber norelativenumber")
 vim_cmd([[filetype plugin indent on]])
 vim_cmd([[set iskeyword+=-]])
 
+local has_mac = vim.fn.has("macunix") == 1
+if has_mac then
+  -- macOS configuration (uses native pbcopy/pbpaste)
+  vim.g.clipboard = {
+    name = "macOS-clipboard",
+    copy = {
+      ["+"] = "pbcopy",
+      ["*"] = "pbcopy",
+    },
+    paste = {
+      ["+"] = "pbpaste",
+      ["*"] = "pbpaste",
+    },
+    cache_enabled = 1,
+  }
+else
+  -- Linux configuration (forces xclip to bypass wl-copy bugs)
+  vim.g.clipboard = {
+    name = "xclip",
+    copy = {
+      ["+"] = "xclip -selection clipboard",
+      ["*"] = "xclip -selection primary",
+    },
+    paste = {
+      ["+"] = "xclip -selection clipboard -o",
+      ["*"] = "xclip -selection primary -o",
+    },
+    cache_enabled = 1,
+  }
+end
+
 vim_g.python3_host_prog = "/usr/bin/python3"
 
 set.autoread = true
