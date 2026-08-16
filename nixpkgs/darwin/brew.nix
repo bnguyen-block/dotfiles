@@ -63,10 +63,8 @@ in {
       ++ brewBlock;
 
     casks = [
-      "claude-code"
       "clipy"
       "font-hack-nerd-font"
-      "gcloud-cli"
       "hammerspoon"
       "obsidian"
     ];
