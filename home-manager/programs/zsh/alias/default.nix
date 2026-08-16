@@ -13,11 +13,11 @@ in
     mux = "tmuxinator";
     ola = "ollama";
     pbcopy =
-      if pkgs.stdenv.isLinux
+      if pkgs.stdenv.hostPlatform.isLinux
       then "xclip -selection clipboard"
       else "pbcopy";
     pbpaste =
-      if pkgs.stdenv.isLinux
+      if pkgs.stdenv.hostPlatform.isLinux
       then "xclip -selection clipboard -o"
       else "pbpaste";
     tf = "terraform";

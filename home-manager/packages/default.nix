@@ -6,7 +6,7 @@ with builtins; let
 in
   commonPackages
   ++ (
-    if pkgs.stdenv.isLinux
+    if pkgs.stdenv.hostPlatform.isLinux
     then linuxPackages
     else macosPackages
   )

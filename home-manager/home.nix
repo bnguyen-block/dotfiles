@@ -25,12 +25,12 @@ with builtins; let
   };
   # This one is very couple with bootstrap script
   userDetails =
-    if pkgs.stdenv.isLinux
+    if pkgs.stdenv.hostPlatform.isLinux
     then import ../nixpkgs/userDetails.nix
     else import ../.nixpkgs/userDetails.nix;
   username = userDetails.username;
   homeDir =
-    if pkgs.stdenv.isLinux
+    if pkgs.stdenv.hostPlatform.isLinux
     then "/home/${username}"
     else "/Users/${username}";
 in
@@ -91,7 +91,7 @@ in
     };
 
     services =
-      if pkgs.stdenv.isLinux
+      if pkgs.stdenv.hostPlatform.isLinux
       then {
         keybase = {enable = true;};
         flameshot = {enable = true;};

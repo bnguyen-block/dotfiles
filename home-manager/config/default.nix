@@ -4,7 +4,7 @@
   ...
 }: {
   ".config/alacritty/alacritty.toml".source =
-    if pkgs.stdenv.isLinux
+    if pkgs.stdenv.hostPlatform.isLinux
     then ./alacritty/alacritty.toml
     else ./alacritty/alacritty-macos.toml;
   ".config/brittany/brittany.yml".source = ./brittany/config.yaml;
