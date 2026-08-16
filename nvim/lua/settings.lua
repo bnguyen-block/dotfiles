@@ -38,8 +38,6 @@ else
   }
 end
 
-vim_g.python3_host_prog = "/usr/bin/python3"
-
 set.autoread = true
 set.backspace = "indent,eol,start"
 set.backup = false
