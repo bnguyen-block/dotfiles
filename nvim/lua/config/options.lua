@@ -8,4 +8,8 @@ vim.g.coq_settings = {
   keymap = {
     recommended = true,
   },
+  limits = {
+    completion_auto_timeout = 0.2,
+    completion_manual_timeout = 0.2,
+  },
 }
