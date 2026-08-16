@@ -24,10 +24,7 @@ with builtins; let
     ];
   };
   # This one is very couple with bootstrap script
-  userDetails =
-    if pkgs.stdenv.hostPlatform.isLinux
-    then import ../nixpkgs/userDetails.nix
-    else import ../.nixpkgs/userDetails.nix;
+  userDetails = import ../nixpkgs/userDetails.nix;
   username = userDetails.username;
   homeDir =
     if pkgs.stdenv.hostPlatform.isLinux
