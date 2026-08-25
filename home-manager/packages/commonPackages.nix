@@ -37,9 +37,20 @@ with pkgs; [
   ormolu
   pandoc
   pdftk
-  pipx
+  # Disable tests/test_inject.py: newer pytest rejects its single-string
+  # parametrize values, breaking test collection (fails to build otherwise)
+  (pipx.overrideAttrs (old: {
+    disabledTestPaths = (old.disabledTestPaths or [ ]) ++ [ "tests/test_inject.py" ];
+  }))
   plantuml
-  poetry
+  # Disable 3 executor tests with stale output-string assertions
+  # (fails to build otherwise)
+  (poetry.overrideAttrs (old: {
+    disabledTests = (old.disabledTests or [ ]) ++ [
+      "test_execute_executes_a_batch_of_operations"
+      "test_execute_prints_warning_for_yanked_package"
+    ];
+  }))
   postgresql_17
   pylint
   python312Packages.sqlparse
@@ -59,7 +70,14 @@ with pkgs; [
   watch
   wget
   witr
-  worktrunk
+  # Skip two tests that probe the process table, which the darwin Nix
+  # sandbox blocks (fails to build otherwise; not fixed upstream as of 0.68.0)
+  (worktrunk.overrideAttrs (old: {
+    checkFlags = (old.checkFlags or [ ]) ++ [
+      "--skip=shell::utils::tests::test_process_name_and_ppid_self"
+      "--skip=shell::utils::tests::test_probe_reports_invoked_name_for_sh"
+    ];
+  }))
   xclip
   yaml-language-server
   yamllint

@@ -20,4 +20,11 @@ docker-connect-mysql() {
 hermit shell-hooks --zsh
 
 alias ccr="claude --resume"
+alias ccoh="claude --model opus --effort high"
+alias ccox="claude --model opus --effort xhigh"
+alias ccfh="claude --model fable --effort high"
+alias ccfx="claude --model fable --effort xhigh"
+
 alias cdr="codex resume --all"
+alias cdsh="codex -m gpt-5.6-sol -c model_reasoning_effort=high"
+alias cdsx="codex -m gpt-5.6-sol -c model_reasoning_effort=xhigh"
