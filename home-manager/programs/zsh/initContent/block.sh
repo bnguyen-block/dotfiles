@@ -18,11 +18,13 @@ docker-connect-mysql() {
 }
 
 alias ccr="claude --resume"
+alias ccom="claude --model opus --effort medium"
 alias ccoh="claude --model opus --effort high"
 alias ccox="claude --model opus --effort xhigh"
 alias ccfh="claude --model fable --effort high"
 alias ccfx="claude --model fable --effort xhigh"
 
 alias cdr="codex resume --all"
+alias cdsm="codex -m gpt-5.6-sol -c model_reasoning_effort=high"
 alias cdsh="codex -m gpt-5.6-sol -c model_reasoning_effort=high"
 alias cdsx="codex -m gpt-5.6-sol -c model_reasoning_effort=xhigh"
