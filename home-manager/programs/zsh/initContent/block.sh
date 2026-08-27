@@ -17,8 +17,6 @@ docker-connect-mysql() {
   docker exec -it "$2" mysql -h 127.0.0.1 -P 3306 -u root -p "$1"
 }
 
-hermit shell-hooks --zsh
-
 alias ccr="claude --resume"
 alias ccoh="claude --model opus --effort high"
 alias ccox="claude --model opus --effort xhigh"
