@@ -7,9 +7,10 @@
   ################################################################################
   # Config
   ################################################################################
-  set-option -g focus-events on
+  set -g extended-keys-format csi-u
   set -g pane-border-status top
   set -g pane-border-format '''
+  set-option -g focus-events on
   set-option -sa terminal-overrides ',xterm-256color:RGB'
 
   ########################################
