@@ -1,7 +1,7 @@
 #! /usr/bin/env bash
 
 today=$(date +"%d-%m-%Y")
-mv /etc/zshenv{,.$today}
-mv /etc/zshrc{,.$today}
-mv /etc/bashrc{,.$today}
-mv /etc/zprofile{,.$today}
+mv /etc/zshenv{,.before-nix-darwin}
+mv /etc/zshrc{,.before-nix-darwin}
+mv /etc/bashrc{,.before-nix-darwin}
+mv /etc/zprofile{,.before-nix-darwin}
