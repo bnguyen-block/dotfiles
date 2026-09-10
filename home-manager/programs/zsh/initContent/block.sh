@@ -28,3 +28,5 @@ alias cdr="codex resume --all"
 alias cdsm="codex -m gpt-5.6-sol -c model_reasoning_effort=high"
 alias cdsh="codex -m gpt-5.6-sol -c model_reasoning_effort=high"
 alias cdsx="codex -m gpt-5.6-sol -c model_reasoning_effort=xhigh"
+
+alias piglm="pi --model databricks-glm-5-3-flash --thinking high"
