@@ -7,6 +7,7 @@ vim.g.coq_v1 = true
 vim.g.coq_settings = {
   keymap = {
     recommended = true,
+    jump_to_mark = vim.NIL,
   },
   limits = {
     completion_auto_timeout = 0.2,
