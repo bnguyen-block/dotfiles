@@ -53,6 +53,11 @@
   set -g extended-keys always
   set -as terminal-features 'xterm*:extkeys'
 
+  # OSC 8 hyperlinks: pass link escape sequences through to Ghostty so terminal
+  # apps (e.g. pi) can render clickable URLs. Applied live via `tmux set-option`
+  # until the next home-manager rebuild picks this up.
+  set -as terminal-features 'xterm-ghostty:hyperlinks'
+
   ########################################
   # Copy/paste interop
   ########################################
