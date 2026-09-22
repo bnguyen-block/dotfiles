@@ -17,16 +17,22 @@ docker-connect-mysql() {
   docker exec -it "$2" mysql -h 127.0.0.1 -P 3306 -u root -p "$1"
 }
 
+# Claude code aliases
 alias ccr="claude --resume"
 alias ccom="claude --model opus --effort medium"
 alias ccoh="claude --model opus --effort high"
 alias ccox="claude --model opus --effort xhigh"
 alias ccfh="claude --model fable --effort high"
 alias ccfx="claude --model fable --effort xhigh"
+alias ccglm="claude --model claude-eco --effort xhigh"
+alias ccastra="claude --model claude-premium --effort low"
 
+# Codex aliases
 alias cdr="codex resume --all"
 alias cdsm="codex -m gpt-5.6-sol -c model_reasoning_effort=high"
 alias cdsh="codex -m gpt-5.6-sol -c model_reasoning_effort=high"
 alias cdsx="codex -m gpt-5.6-sol -c model_reasoning_effort=xhigh"
+alias cdln="codex -m gpt-5.6-luna -c model_reasoning_effort=xhigh"
 
+# pi aliases
 alias piglm="pi --model databricks-glm-5-3-flash --thinking high"
