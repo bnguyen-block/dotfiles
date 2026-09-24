@@ -109,10 +109,10 @@
   # Vim style pane selection
   ####################
   is_vim="ps -o state= -o comm= -t '#{pane_tty}' \
-      | grep -iqE '^[^TXZ ]+ +(\\S+\\/)?g?(view|\.?n?vim?x?(-wrapped)?)(diff)?$'"
+      | grep -iqE '^[^TXZ ]*\\+ +(\\S+\\/)?g?(view|\.?n?vim?x?(-wrapped)?)(diff)?$'"
 
   is_fzf="ps -o state= -o comm= -t '#{pane_tty}' \
-    | grep -iqE '^[^TXZ ]+ +(\\S+\\/)?fzf$'"
+    | grep -iqE '^[^TXZ ]*\\+ +(\\S+\\/)?fzf$'"
 
   bind -n C-h run "($is_vim && tmux send-keys C-h) || \
                    tmux select-pane -L"
