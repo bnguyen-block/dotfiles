@@ -1,4 +1,5 @@
 {...}: [
+  "abseil"
   "aittributor"
   "aws-creds"
   "aws-iam-authenticator"
@@ -16,6 +17,7 @@
   "git-lfs"
   "gpg"
   "haproxy"
+  "highway"
   "jq"
   "ldcli"
   "lefthook"
@@ -27,6 +29,7 @@
   "maven"
   "npth"
   "openssl@1.1"
+  "openssl@4"
   "p2"
   "package-inventory"
   "pinentry"
