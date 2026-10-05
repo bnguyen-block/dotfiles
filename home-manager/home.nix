@@ -12,12 +12,15 @@ with builtins; let
       # on macOS. Override here so every pkgsUnstable.mise reference (package
       # list and zsh completion) uses the patched build.
       # Drop this overlay once nixpkgs gates the skip on darwin too.
+      # mise tests run under nextest, which only accepts `--skip PATTERN` as
+      # two separate args and rejects the `--skip=PATTERN` form.
       (final: prev: {
         mise = prev.mise.overrideAttrs (old: {
           checkFlags =
             (old.checkFlags or [])
             ++ prev.lib.optionals prev.stdenv.hostPlatform.isDarwin [
-              "--skip=oci::layer::tests::preserve_metadata_dir_layer_keeps_special_permission_bits"
+              "--skip"
+              "oci::layer::tests::preserve_metadata_dir_layer_keeps_special_permission_bits"
             ];
         });
       })
