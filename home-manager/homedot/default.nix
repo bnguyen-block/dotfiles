@@ -72,4 +72,9 @@
 
   # bundler
   ".bundle/config".source = ./bundler/config;
+
+  # agents
+  ".agents/AGENTS.md".source = ../../AGENTS.md;
+  ".claude/CLAUDE.md".source = ../../AGENTS.md;
+  ".codex/AGENTS.md".source = ../../AGENTS.md;
 }
