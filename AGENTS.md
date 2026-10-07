@@ -156,3 +156,12 @@ When working on a larger change:
 - Optimize for reviewer comprehension: each PR should be simple, focused, and quick to understand on its own
 - In general, err toward smaller PRs, but avoid splitting work so aggressively that the overhead becomes silly or wastes reviewer time
 - Prefix PR title with linear ticket if it exist otherwise use the short version of the service name
+
+## END OF TURN
+
+End every response that did real work with SDN:
+
+- **Summary**: what was done, with pointers (file:line, commit, URL)
+- **Decisions Needed**: open decisions for the user, with pointers
+- **Next**: next steps you can take
+Use simple technical English. Skip this for trivial replies.
