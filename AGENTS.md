@@ -27,7 +27,6 @@ run the tests and linters, commit, and mark the item done in the plan file.
 Stop and ask only if tests fail and the fix is unclear, a decision is needed
 that the plan does not cover, or the next step is outward-facing (push, PR,
 deploy).
-- When I say "go one", do only the next un-done item, then stop.
 
 # CORE DEVELOPMENT PRINCIPLES
 
