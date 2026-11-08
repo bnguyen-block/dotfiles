@@ -132,7 +132,7 @@ Store user preferences and memory in the agent's GLOBAL config scope (`~/.claude
 - When create a PR, always create a draft PR. Do not mark the PR as ready to review unless you are instructed to do so
 - Do NOT include test plan checklists in PR descriptions (CI already verifies tests pass, build succeeds, no lint errors)
 - Do NOT add Claude Code attribution footers to PRs
-- Keep PR descriptions concise: Summary section with bullet points only
+- Write PR bodies with the `pr-body` skill
 - Always include descriptive commit message bodies that explain the "why", not just the "what"
 - When create a new branch, the branch should be in this format
 bnguyen/[date]-[service-short-name]-description. Where
