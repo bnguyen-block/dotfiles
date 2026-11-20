@@ -17,6 +17,16 @@ approval. Repeat and refine as many time as necessary. After the user is happy
 with the plan, write your plan of implementation to an agent-specific plan
 file e.g. plan-{AI-model-name}.md, exmaple: plan-claude.md for Claude Code, plan-codex.md for Codex,
 plan-amp.md for Amp, plan-goose.md for Goose.
+- When writing a plan-*.md, start it with an `## Overview` for a human reader:
+a few sentences on what will change for the user and why, then Mermaid
+diagrams, in ```mermaid blocks, of what the change affects, where they apply:
+the flow it changes, before and after; a map of the parts it touches and how
+they connect; the data and state it changes. Mark the new, changed and removed
+parts, and say what the marks mean. Draw at most 4 diagrams of about 15 nodes
+each, as every agent reads the plan and a long Overview gets skipped. Leave out
+a view that does not apply rather than inventing one. Then write the numbered,
+testable items. When the plan changes, keep the Overview and diagrams in line
+with the items.
 - You can look at other plan files (e.g. plan-amp.md, plan-codex.md,
 plan-goose.md) and learn from them. Pick the one that is good and ask for
 clarification if there is something that is not clear in other plans.
