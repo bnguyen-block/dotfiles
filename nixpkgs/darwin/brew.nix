@@ -45,7 +45,6 @@ in {
         "libuv"
         "libxmlsec1"
         "libyaml"
-        "llvm@12"
         "luajit-openresty"
         "luv"
         "mas"
