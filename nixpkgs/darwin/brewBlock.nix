@@ -53,6 +53,7 @@
   "sq-proto-lint"
   "sq-protocli"
   "sq-satoolbox"
+  "sq-wtfs"
   "sqm"
   "square-git-utils"
   "square-ssh-config"
