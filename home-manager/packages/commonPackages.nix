@@ -43,7 +43,7 @@ with pkgs; [
     disabledTestPaths = (old.disabledTestPaths or [ ]) ++ [ "tests/test_inject.py" ];
   }))
   plantuml
-  # Disable 3 executor tests with stale output-string assertions
+  # Disable 2 executor tests with stale output-string assertions
   # (fails to build otherwise)
   (poetry.overrideAttrs (old: {
     disabledTests = (old.disabledTests or [ ]) ++ [
