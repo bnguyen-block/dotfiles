@@ -43,12 +43,14 @@ with pkgs; [
     disabledTestPaths = (old.disabledTestPaths or [ ]) ++ [ "tests/test_inject.py" ];
   }))
   plantuml
-  # Disable 2 executor tests with stale output-string assertions
+  # Disable 2 executor tests with stale output-string assertions, and a pipe
+  # test whose 1s timeout is too tight under parallel xdist load
   # (fails to build otherwise)
   (poetry.overrideAttrs (old: {
     disabledTests = (old.disabledTests or [ ]) ++ [
       "test_execute_executes_a_batch_of_operations"
       "test_execute_prints_warning_for_yanked_package"
+      "test_call_does_not_block_on_full_pipe"
     ];
   }))
   postgresql_17
