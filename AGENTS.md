@@ -105,11 +105,8 @@ deploy).
 
 ## CODE COMMENT
 
-- When writing comment make sure that it is human friendly. e.g. it is easy for
-  human reviewer to read
-- Explain the why in the comment instead of the what
-- Do not include linear ticket number in the comment
-- Use simple technical English
+- No comment when writing code. The code should be descriptive so no comment is
+  needed
 
 ## RUNNING TEST
 
